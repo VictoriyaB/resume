@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 18px 'Montserrat', sans-serif;
+    background: linear-gradient(to top, #d3bec3, #5e3f44) no-repeat;
+    color: #1c1a1a
+}
+
+.container {
+    max-width: 750px;
+    min-height: 100vh;
+    padding: 15px;
+    margin: auto;
+    color: #0f090a;
+}
+
+.info {
+    margin: 25px 0;
+    display: flex;
+}
+
+.info-text {
+    padding: 0 15px;
+    align-self: flex-end;    
+}
+
+.info-text h1 {
+    margin-bottom: 15px;
+}
+
+.my-photo {
+    width: 300px; 
+    display: block; 
+}
+
+.quote {
+    margin-bottom: 20px;
+}
+
+.works-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+}
+
+@keyframes link-animate {
+    from {transform: translateX(0);}
+    to {transform: translateX(40px);}
+}
+
+.works-link::after {
+    font-family: "FontAwesome";
+    content: "\f138";
+    display: inline-block;
+    visibility: hidden;
+    opacity: 0;
+    margin-left: 10px;
+    animation: link-animate 3s infinite;
+    transition: all 1s;
+}
+
+.works-link:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.works-link:active {
+    opacity: 0.5;
+}
+
+
+.block {
+    border-radius: 5px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);    
+}
+
+.quote {
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.info-block {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;   
+}
+
+.info-block h4 {
+    margin-bottom: 5px;
+}
+
+.list {
+    list-style: none;
+}
+
+.table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.table tr:first-child {
+    font-weight: 900;
+}
+
+.table tr:nth-child(odd) {
+    background-color: #d3bec3;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.social {
+    background-color: #5e3f44;
+    color:#fff;
+    text-align: center;
+}
+
+.social ul {
+    display: flex;
+    justify-content: center;
+    color:#fff;
+}
+
+.social li {
+    margin: 10px;
+}
+
+.social li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+.social a {
+    text-decoration: none;
+    font-size: 40px;
+    color:#fff;     
+}
+
+.social a:active {
+    color: #2c1d20;
+}
+
+@media (max-width: 550px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .info {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .my-photo {
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    
+    .info-text h1 {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 400px) {
+    .info-block {
+        padding: 10px;
+    }
+    .table td {
+        padding: 5px;
+    }
+        
+    .social a {
+        font-size: 30px;
+    }
+        
+}
