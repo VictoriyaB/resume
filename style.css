@@ -62,7 +62,7 @@ body {
     visibility: hidden;
     opacity: 0;
     margin-left: 10px;
-    animation: link-animate 3s infinite;
+    animation: link-animate 1.5s infinite;
     transition: all 1s;
 }
 
