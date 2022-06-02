@@ -59,16 +59,14 @@ body {
     font-family: "FontAwesome";
     content: "\f138";
     display: inline-block;
-    visibility: hidden;
-    opacity: 0;
     margin-left: 10px;
-    animation: link-animate 1.5s infinite;
-    transition: all 1s;
+    position: absolute;
+    top: 6px;
 }
 
 .works-link:hover::after {
-    visibility: visible;
-    opacity: 1;
+    animation: link-animate 1.5s infinite;
+    transition: all 1s;
 }
 
 .works-link:active {
@@ -96,8 +94,39 @@ body {
     margin-bottom: 5px;
 }
 
+.work-title {
+    text-align: center;
+    color:#fff;
+    margin-bottom: 40px;
+}
+
 .list {
     list-style: none;
+}
+
+.sub-list {
+    margin-left: 30px;
+    font-size: 16px;
+    list-style-type: disc;
+}
+
+.link {
+    text-decoration: none;
+    color: #1c1a1a
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.link-home {
+    display: block;
+    color:#fff;
+    font-size: 30px;
+}
+
+.link-home:hover {
+    opacity: 0.8;
 }
 
 .table {
