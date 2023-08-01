@@ -112,11 +112,11 @@ body {
 
 .link {
     text-decoration: none;
-    color: #1c1a1a
+    color: #1c1a1a;
 }
 
 .link:hover {
-    text-decoration: underline;
+    color: #4f4f4f;
 }
 
 .link-home {
